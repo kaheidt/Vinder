@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="91f0ea02-5c9d-49d9-9f51-e982b7cc1666" ChangeDateTime="01/20/2016 18:30:20">
+    <Property Name="ElementName" Value="[dbo].[Profile].[MinimumYear]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Profile]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MinYear" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bbdfe700-c81a-4544-9799-593714380735" ChangeDateTime="01/20/2016 18:30:29">
+    <Property Name="ElementName" Value="[dbo].[Profile].[Max]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Profile]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MaxYear" />
+  </Operation>
+</Operations>

@@ -13,8 +13,9 @@ namespace Vinder.WebAPI.Controllers
     public class VehiclesController : ApiController
     {
         [Route("")]
+        [HttpGet]
         public Vehicle[] GetVehicles(
-            [FromUri] string uid,
+            [FromUri] Guid? uid,
             [FromUri] string[] vins,
             [FromUri] double? latitude,
             [FromUri] double? longitude)
@@ -22,7 +23,7 @@ namespace Vinder.WebAPI.Controllers
             return GenerateDummyVehicles(uid, vins, latitude, longitude);
         }
 
-        private Vehicle[] GenerateDummyVehicles(string uid, string[] vins, double? latitude, double? longitude)
+        private Vehicle[] GenerateDummyVehicles(Guid? uid, string[] vins, double? latitude, double? longitude)
         {
             var vehicles = new List<Vehicle>();
 
@@ -46,7 +47,7 @@ namespace Vinder.WebAPI.Controllers
                 }
             }
 
-            vehicle.AttributesDictionary.Add("uid", uid);
+            vehicle.AttributesDictionary.Add("uid", uid.HasValue ? uid.Value.ToString() : null);
 
             vehicle.AttributesDictionary.Add("latitude", latitude.HasValue ? latitude.Value.ToString(CultureInfo.CurrentCulture) : null);
 
