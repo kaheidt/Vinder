@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinder.WebAPI.UnitTests", "
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Vinder.Database", "Vinder.Database\Vinder.Database.sqlproj", "{1E2F78CD-42A6-4419-B6CF-ECF9A77263D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinder.Business", "Vinder.Business\Vinder.Business.csproj", "{AB8FF489-38A4-4A05-9CAA-4EB6EE79B1FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{1E2F78CD-42A6-4419-B6CF-ECF9A77263D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E2F78CD-42A6-4419-B6CF-ECF9A77263D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1E2F78CD-42A6-4419-B6CF-ECF9A77263D7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AB8FF489-38A4-4A05-9CAA-4EB6EE79B1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8FF489-38A4-4A05-9CAA-4EB6EE79B1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8FF489-38A4-4A05-9CAA-4EB6EE79B1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8FF489-38A4-4A05-9CAA-4EB6EE79B1FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

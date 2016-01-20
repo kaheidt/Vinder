@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{1e2f78cd-42a6-4419-b6cf-ecf9a77263d7}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -65,8 +65,13 @@
     <Build Include="Tables\Profiles.sql" />
     <Build Include="Tables\Dealers.sql" />
     <Build Include="Tables\Vehicles.sql" />
+    <Build Include="Tables\Usages.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Vinder.Database.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vinder.Database.Azure.publish.xml" />
+    <None Include="Vinder.Database.localdb.publish.xml" />
   </ItemGroup>
 </Project>
