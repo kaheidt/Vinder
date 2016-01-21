@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Entities\Dealer.cs" />
     <Compile Include="Entities\Profile.cs" />
+    <Compile Include="Entities\ProfileDetail.cs" />
     <Compile Include="Entities\Usage.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Vehicle.cs" />

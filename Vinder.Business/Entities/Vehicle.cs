@@ -37,6 +37,9 @@ namespace Vinder.Business.Entities
         public string BodyDescription { get; set; }
 
         [StringLength(200)]
+        public string EngineDescription { get; set; }
+
+        [StringLength(200)]
         public string TransmissionDescription { get; set; }
 
         [StringLength(50)]

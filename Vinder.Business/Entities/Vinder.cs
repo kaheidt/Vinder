@@ -13,6 +13,7 @@ namespace Vinder.Business.Entities
         }
 
         public virtual DbSet<Dealer> Dealers { get; set; }
+        public virtual DbSet<ProfileDetail> ProfileDetails { get; set; }
         public virtual DbSet<Profile> Profiles { get; set; }
         public virtual DbSet<Usage> Usages { get; set; }
         public virtual DbSet<User> Users { get; set; }
@@ -38,7 +39,15 @@ namespace Vinder.Business.Entities
                 .IsUnicode(false);
 
             modelBuilder.Entity<Dealer>()
-                .Property(e => e.PotalCode)
+                .Property(e => e.PostalCode)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ProfileDetail>()
+                .Property(e => e.Type)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ProfileDetail>()
+                .Property(e => e.Value)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Profile>()
@@ -110,6 +119,10 @@ namespace Vinder.Business.Entities
 
             modelBuilder.Entity<Vehicle>()
                 .Property(e => e.BodyDescription)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Vehicle>()
+                .Property(e => e.EngineDescription)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Vehicle>()

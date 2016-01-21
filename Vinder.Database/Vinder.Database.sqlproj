@@ -66,6 +66,7 @@
     <Build Include="Tables\Dealers.sql" />
     <Build Include="Tables\Vehicles.sql" />
     <Build Include="Tables\Usages.sql" />
+    <Build Include="Tables\ProfileDetails.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Vinder.Database.refactorlog" />

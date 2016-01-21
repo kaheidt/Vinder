@@ -15,6 +15,7 @@ namespace Vinder.WebAPI.Controllers
         [HttpGet]
         public bool SubmitLike(
             [FromUri] Guid? uid,
+            [FromUri] string vin,
             [FromUri] decimal? distance,
             [FromUri] bool like)
         {

@@ -29,7 +29,7 @@ namespace Vinder.Business.Entities
         public string State { get; set; }
 
         [StringLength(9)]
-        public string PotalCode { get; set; }
+        public string PostalCode { get; set; }
 
         public DbGeography GeoLocation { get; set; }
 

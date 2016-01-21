@@ -11,6 +11,7 @@
 	[Odometer] INT NULL, 
 	[Price] INT NULL,
 	[BodyDescription] VARCHAR(200) NULL, 
+	[EngineDescription] VARCHAR(200) NULL, 
 	[TransmissionDescription] VARCHAR(200) NULL, 
 	[ExteriorColor] VARCHAR(50) NULL, 
 	[InteriorColor] VARCHAR(50) NULL, 
