@@ -58,6 +58,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="Data" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Users.sql" />
@@ -72,7 +73,16 @@
     <RefactorLog Include="Vinder.Database.refactorlog" />
   </ItemGroup>
   <ItemGroup>
+    <Build Include="Data\Seed.dbo.Dealers.sql" />
+    <Build Include="Data\Seed.dbo.ProfileDetails.sql" />
+    <Build Include="Data\Seed.dbo.Profiles.sql" />
+    <Build Include="Data\Seed.dbo.UserProfiles.sql" />
+    <Build Include="Data\Seed.dbo.Users.sql" />
+    <Build Include="Data\Seed.dbo.Vehicles.sql" />
     <None Include="Vinder.Database.Azure.publish.xml" />
     <None Include="Vinder.Database.localdb.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
