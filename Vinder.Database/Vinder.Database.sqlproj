@@ -73,12 +73,12 @@
     <RefactorLog Include="Vinder.Database.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Data\Seed.dbo.Dealers.sql" />
-    <Build Include="Data\Seed.dbo.ProfileDetails.sql" />
-    <Build Include="Data\Seed.dbo.Profiles.sql" />
-    <Build Include="Data\Seed.dbo.UserProfiles.sql" />
-    <Build Include="Data\Seed.dbo.Users.sql" />
-    <Build Include="Data\Seed.dbo.Vehicles.sql" />
+    <None Include="Data\Seed.dbo.Dealers.sql" />
+    <None Include="Data\Seed.dbo.ProfileDetails.sql" />
+    <None Include="Data\Seed.dbo.Profiles.sql" />
+    <None Include="Data\Seed.dbo.UserProfiles.sql" />
+    <None Include="Data\Seed.dbo.Users.sql" />
+    <None Include="Data\Seed.dbo.Vehicles.sql" />
     <None Include="Vinder.Database.Azure.publish.xml" />
     <None Include="Vinder.Database.localdb.publish.xml" />
   </ItemGroup>

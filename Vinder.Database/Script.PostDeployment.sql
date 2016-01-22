@@ -9,10 +9,10 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-:r .\Seed.dbo.Users.sql
-:r .\Seed.dbo.Profiles.sql
-:r .\Seed.dbo.ProfileDetails.sql
-:r .\Seed.dbo.UserProfiles.sql
+:r .\Data\Seed.dbo.Users.sql
+:r .\Data\Seed.dbo.Profiles.sql
+:r .\Data\Seed.dbo.ProfileDetails.sql
+:r .\Data\Seed.dbo.UserProfiles.sql
 
-:r .\Seed.dbo.Dealers.sql
-:r .\Seed.dbo.Vehicles.sql
+:r .\Data\Seed.dbo.Dealers.sql
+:r .\Data\Seed.dbo.Vehicles.sql
